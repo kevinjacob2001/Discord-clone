@@ -2,6 +2,7 @@ import React from "react";
 import "./Sidebar.css";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AddIcon from "@material-ui/icons/Add";
+import SignalCellularAltIcon from '@material-ui/icons/SignalCellularAlt'
 
 import SidebarChannel from "../Sidebar_Channel/SidebarChannel";
 
@@ -29,7 +30,14 @@ const Sidebar = () => {
           <SidebarChannel />
           <SidebarChannel />
         </div>
-        
+      </div>
+      
+      <div className="sidebar__voice">
+          <SignalCellularAltIcon className="sidebar__voiceIcon" fontSize="large"/>
+          <div className="sidebar__voiceInfo">
+              <h3>Voice Connected</h3>
+              <p>Stream</p>
+          </div>
       </div>
     </div>
   );
