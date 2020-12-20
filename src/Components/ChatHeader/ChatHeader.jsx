@@ -3,6 +3,9 @@ import React from 'react';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import EditLocationRoundedIcon from '@material-ui/icons/EditLocationRounded';
 import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
+import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
+import SendRoundedIcon from '@material-ui/icons/SendRounded';
+import HelpRoundedIcon from '@material-ui/icons/HelpRounded';
 
 import './ChatHeader.css'
 
@@ -17,9 +20,15 @@ function ChatHeader(){
            <NotificationsIcon/>
            <EditLocationRoundedIcon/>
            <PeopleAltRoundedIcon/>
+           
            <div className="chatHeader__search">
                <input placeholder="Search"/>
+               <SearchRoundedIcon/>
            </div>
+           <SendRoundedIcon/>
+           <HelpRoundedIcon/>
+           
+
         </div>
     </div>
     )
