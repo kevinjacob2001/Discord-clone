@@ -26,7 +26,16 @@
    color: white;
 }
 
+.sidebar__header{
+    display: flex;
+}
+
 .sidebar__channelsHeader{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2f3135;
+    color: gray;
+
  }
