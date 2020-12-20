@@ -16,6 +16,7 @@ function ChatHeader(){
         <div className="chatHeader__left">
             <h3><span className="chatHeader__hash">#</span>Test Channel</h3>
         </div>
+        
         <div className="chatHeader__right">
            <NotificationsIcon/>
            <EditLocationRoundedIcon/>
