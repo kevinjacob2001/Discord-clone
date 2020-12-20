@@ -39,3 +39,33 @@
     color: gray;
 
  }
+
+ .sidebar__voice{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     color:gray;
+     background-color: #2f3135;
+     padding: 10px;
+     border-top: 1px solid gray;
+ }
+
+ .sidebar__voiceInfo{
+    flex: 1;
+    padding: 10px;
+}
+
+.sidebar__voiceIcons{
+    color: #4fb185;
+}
+
+.sidebar__voiceInfo>h3{
+    color: #4fb185;
+}
+
+.sidebar__voiceInfo>p{
+   font-size: smaller;
+}
+.sidebar__voiceIcons>.MuiSvgIcon-root{
+    padding: 10px;
+}
