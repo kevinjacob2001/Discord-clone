@@ -16,3 +16,12 @@
   border-top: 1px solid gray;
   background-color: #474b53;
 }
+
+.chat__input>form>input{
+    padding: 15px;
+    background: transparent;
+    border: none;
+    outline-width: 0;
+    color: white;
+    font-size: large;
+  }
