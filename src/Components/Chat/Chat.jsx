@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 
 import './Chat.css'
 
@@ -19,22 +19,32 @@ function Chat(){
     const user=useSelector(selectUser)
     const channelId=useSelector(selectChannelId)
     const channelName=useSelector(selectchannelName)
+    
+    const [input,setInput]=useState('')
+    const [messages,setMessages]=useState([])
+
+
+
     return(
         <div className="chat">
             <ChatHeader channelName={channelName}/>
 
             <div className="chat__message">
-               <Message/>
-               <Message/>
-               <Message/>
-               <Message/>
-               <Message/>
+               {messages.map((message)=>(
+                <Message/>
+               ))}
+               
             </div>
             <div className="chat__input">
                 <AddCircleRoundedIcon fontSize="large"/>
                 <form>
-                    <input placeholder={`Message #TESTCHANNEL`}/>
-                    <button className="chat__inputButton" type="submit"> Send Message</button>
+                    <input 
+                    value={input} 
+                    onChange={(e)=>setInput(e.target.value)} 
+                    placeholder={`Message ${channelName}`}
+                    disabled={!channelId}
+                    />
+                    <button disabled={!channelId} className="chat__inputButton" type="submit"> Send Message</button>
                 </form>
                 <div className="chat__inputIcons">
                     <CardGiftcardIcon fontSize="large"/>
