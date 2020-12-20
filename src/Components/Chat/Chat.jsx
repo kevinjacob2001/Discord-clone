@@ -2,14 +2,14 @@ import React from 'react';
 
 import './Chat.css'
 
-import ChatHeader from '../ChatHeader/ChatHeader';
-
 import AddCircleRoundedIcon from '@material-ui/icons/AddCircleRounded';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import EmojiEmotionsIcon from '@material-ui/icons/EmojiEmotions';
 import GifIcon from '@material-ui/icons/Gif';
 
 
+import ChatHeader from '../ChatHeader/ChatHeader';
+import Message from '../Message/Message'
 
 function Chat(){
     return(
@@ -17,7 +17,11 @@ function Chat(){
             <ChatHeader/>
 
             <div className="chat__message">
-
+               <Message/>
+               <Message/>
+               <Message/>
+               <Message/>
+               <Message/>
             </div>
             <div className="chat__input">
                 <AddCircleRoundedIcon fontSize="large"/>

@@ -21,7 +21,24 @@
     padding: 15px;
     background: transparent;
     border: none;
+    width: 100%;
     outline-width: 0;
     color: white;
     font-size: large;
+  }
+
+  .chat__input>form{
+      flex: 1;
+  }
+
+  .chat__inputButton{
+      display: none;
+  }
+
+  .chat__inputIcons>.MuiSvgIcon-root{
+      padding: 5px;
+  }
+
+  .chat__message{
+      flex: 1;
   }
