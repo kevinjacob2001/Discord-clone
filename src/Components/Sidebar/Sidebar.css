@@ -40,7 +40,7 @@
 
  }
 
- .sidebar__voice{
+ .sidebar__voice,.sidebar__profile{
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -67,5 +67,16 @@
    font-size: smaller;
 }
 .sidebar__voiceIcons>.MuiSvgIcon-root{
+    padding: 10px;
+}
+
+.sidebar__profileInfo{
+    flex: 1;
+    padding: 10px;
+}
+.sidebar__profileInfo>h3{
+    color: white;
+}
+.sidebar__profileInfo>.MuiSvgIcon-root{
     padding: 10px;
 }
