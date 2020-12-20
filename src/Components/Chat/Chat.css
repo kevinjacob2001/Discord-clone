@@ -5,3 +5,11 @@
     background-color: #363a3f;
     height: 100vh;
 }
+
+.chat__input{
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
