@@ -3,6 +3,7 @@ import { Counter } from './features/Counter';
 import './App.css';
 
 import Sidebar from './Components/Sidebar/Sidebar';
+import Chat from './Components/Chat/Chat'
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
 
      {/* Sidebar */}
      <Sidebar/>
-   
+
+     {/* Chat */}
+     <Chat/>
+    
     </div>
   );
 }
