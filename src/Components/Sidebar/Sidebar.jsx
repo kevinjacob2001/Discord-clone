@@ -7,6 +7,7 @@ import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 import CallIcon from '@material-ui/icons/Call';
 
 import SidebarChannel from "../Sidebar_Channel/SidebarChannel";
+import { Avatar } from "@material-ui/core";
 
 const Sidebar = () => {
   return (
@@ -46,6 +47,10 @@ const Sidebar = () => {
               <CallIcon/>
           </div>
       </div>
+      <div className="sidebar__profile">
+          <Avatar/>
+      </div>
+
     </div>
   );
 };
