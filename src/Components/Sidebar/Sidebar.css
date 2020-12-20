@@ -16,3 +16,17 @@
     border-bottom: 3px solid #26282c;
 
 }
+.sidebar__channels{
+    flex: 1;
+}
+.sidebar__addChannel{
+    cursor: pointer;
+ }
+.sidebar__addChannel:hover{
+   color: white;
+}
+
+.sidebar__channelsHeader{
+    display: flex;
+    justify-content: space-between;
+ }
