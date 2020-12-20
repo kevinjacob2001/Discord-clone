@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 
 import { useSelector, useDispatch } from "react-redux";
-import { login, selectUser } from "./features/userSlice";
+import { login, selectUser,logout } from "./Components/features/userSlice";
 
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Chat from "./Components/Chat/Chat";
@@ -27,9 +27,10 @@ function App() {
         );
       } else {
         //user is logged out
+        dispatch(logout())
       }
     });
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="app">

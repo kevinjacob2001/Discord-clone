@@ -80,3 +80,15 @@
 .sidebar__profileInfo>.MuiSvgIcon-root{
     padding: 10px;
 }
+
+.sidebar>Button{
+    background: #363a3f;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.sidebar>Button:hover{
+    background: #272b30;
+    
+
+}
