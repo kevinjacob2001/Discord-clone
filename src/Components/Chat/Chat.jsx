@@ -1,7 +1,7 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 
 import './Chat.css'
-
+import db from '../firebase';
 import {useSelector} from 'react-redux'
 
 import AddCircleRoundedIcon from '@material-ui/icons/AddCircleRounded';
@@ -23,6 +23,13 @@ function Chat(){
     const [input,setInput]=useState('')
     const [messages,setMessages]=useState([])
 
+   useEffect(()=>{
+       if(channelId){
+      db.collection('channels').doc(channelId).collection('messages').orderBy('timestamp','desc').onSnapshot((snapshot)=>{
+          setMessages(snapshot.docs.map((doc)=>doc.data()))
+      })
+    }
+   },[channelId])
 
 
     return(
