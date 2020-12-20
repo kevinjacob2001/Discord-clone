@@ -4,7 +4,7 @@ import './SidebarChannel.css'
 
 const SidebarChannel=({id,channel})=>{
     return(
-        <div>
+        <div className="sidebarChannel">
               <h4><span className="sidebarChannel__hash">#</span>KevinJacob</h4>
         </div>
     )
